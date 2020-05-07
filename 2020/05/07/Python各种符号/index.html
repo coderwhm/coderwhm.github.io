@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python列表和循环, coder王鹤鸣">
+    <meta name="keywords" content="Python各种符号, coder王鹤鸣">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python列表和循环 | coder王鹤鸣</title>
+    <title>Python各种符号 | coder王鹤鸣</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python列表和循环</h1>
+                    <h1 class="description center-align post-title">Python各种符号</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/Pyhton/">
+                                <span class="chip bg-color">Pyhton</span>
                             </a>
                         
                     </div>
@@ -471,34 +471,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=437250682&auto=1&height=66"></iframe>
-
-
-
-
-<p>#<strong>列表</strong><br>在开始使用for循环之前，你需要在某个位置存放循环的结果。最好的办法就是使用列表(list)，顾名思义，它就是一个从头到尾按照顺序存放东西的容器。<br>##<strong>如何创建列表</strong><br>hair = [‘brown’,’blond’,’red’]<br>eyes = [‘brown’,’blue’,’green’]<br>weights = [1,2,3,4]<br>你要做的是以左方括号([)开头“打开”列表，然后写下你要放入列表里的东西，用逗号隔开，就跟函数的参数一样，最后你需要用右方括号(])表明列表结束。然后Python接收这个列表以及里面所有的内容，将其赋值给一个变量。<br>##<strong>列表及相关使用</strong></p>
-<hr>
-<p> 增加  1【append】</p>
-<p>namelist = [“小张”,”小王”,”小亮”]<br>print(“—–增加前-名单列表数据—–”)<br>for name in namelist:<br>    print(name)</p>
-<p>nametemp = input(“请输入想增加的名字:”)<br>namelist.append(nametemp)        #在末尾追加一个元素<br>print(“—–增加后-名单列表数据—–”)<br>for name in namelist:<br>    print(name)</p>
-<p>a = [1,2,3,4]<br>b = [5,6]<br>a.append(b)<br>print(a)                          #将b列表当作一个元素，加入到a列表中</p>
-<p>#增加 【extend】<br>a = [1,2,3,4]<br>b = [5,6]<br>a.extend(b)<br>print(a)                          #将b列表中的每个元素，逐一追加到a列表中</p>
-<p>a = [0,1,2,3]<br>a.insert(1,2)                     #第一个表示下标，第二个表示元素（对象）<br>print(a)                          #指定下标插入元素</p>
-<p>#删 [del] [pop] [remove]</p>
-<p>movieName = [“黑客帝国”,”指环王”,”速度与激情”,”加勒比海盗”,”第一滴血”]<br>print(“—–删除前-电影名单列表—–”)<br>for name in movieName:<br>    print(name)<br>#del movieName[2]                   #在指定下标删除一个元素<br>#movieName.pop()                    #弹出末尾最后一个元素<br>movieName.remove(“指环王”)           #直接删除指定内容的元素<br>print(“—–删除后-电影名单列表—–”)<br>for name in movieName:<br>    print(name)</p>
-<p>#改</p>
-<p>namelist = [“小张”,”小王”,”小亮”]<br>print(“—–修改前-名单列表数据—–”)<br>for name in namelist:<br>    print(name)                      #修改指定下标的元素内容<br>namelist[1] = “小红”</p>
-<p>namelist<br>print(“—–修改后-名单列表数据—–”)<br>for name in namelist:<br>    print(name)</p>
-<p>#查【in- not in】</p>
-<p>namelist = [“小张”,”小王”,”小亮”]<br>findname = input(“请输入你要查找的学生内容:”)<br>if findname in namelist:<br>    print(“在学院名单中找到了相同的名字”)<br>else:<br>    print(“未找到”)</p>
-<p>a = [“a”,”b”,”c”,”d”,”a”]</p>
-<p>print(a.index(“a”,1,5))                #查找指定下标范围的元素，并返回找到对应数据的下标</p>
-<p>print(a.index(“a”,1,4))               #范围区间 左闭右开<br>                                      #找不到会报错</p>
-<p>print(a.count(“b”))                   #统计某个元素出现几次</p>
-<p>#排序和反转</p>
-<p>a = [1,2,3,4]<br>print(a)<br>a.reverse()                           #将列表所以元素反转<br>print(a)<br>a.sort()                             #排序 升序<br>print(a)<br>a.sort(reverse=True)                #降序<br>print(a)</p>
-<hr>
-<p>#<strong>for循环</strong><br>Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串。<br>这个也没什么可说的吧</p>
+                <p>#Python中常用的符号<br><strong>关键字</strong><br>|关键字|描述|实例|<br>|:–|:–|:–|<br>| and    | 逻辑与| True and False == False|<br>| as    | with-as语句的一部分| with x as y: pass|<br>| assert    | 断言（确保）某东西为真| assert False, “Error!”|<br>| break    | 立即停止循环| while True : break|<br>| class     | 定义类| class person(object)|<br>| continue    | 停止当前循环的后续步骤，再做一次循环| while True: continue|<br>| def    | 定义函数| def x(): pass|<br>| del    | 从字典中删除| del x[y]|<br>| elif    | else条件| if : x; elif: y; else: z|<br>| else    | else条件| if : x; elif: y; else: z|<br>| except    | 如果发生异常，运行此处代码| except ValueError, e: print(e)|<br>| exec    | 将字符串作为Python脚本运行| exec ‘print(“hello”)’|<br>| finally    | 不管是否发生异常，都运行此处代码| finally: pass|<br>| for    | 针对物件集合执行循环| for i in range(1,10)|<br>| from    | 从模块中导入特定部分| from x import y|<br>| global    | 申明全局变量| global x|<br>| if    | if条件| if : x; elif: y; else: z|<br>| import    | 将模块导入当前文件以供使用| import os|<br>| in    | for循环的一部分，也可以x是否在y中的条件判断| for i in range(1,10)以及1 in [1] == True|<br>| is    | 类似于==，判断是否一样| 1 is 1 == True|<br>| lambda    | 创建短匿名函数| s = lambda y : y ** y;s(3)|</p>
 
             </div>
             <hr/>
@@ -524,7 +497,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/07/Python%E5%88%97%E8%A1%A8%E5%92%8C%E5%BE%AA%E7%8E%AF/">http://yoursite.com/2020/05/07/Python%E5%88%97%E8%A1%A8%E5%92%8C%E5%BE%AA%E7%8E%AF/</a>
+                    <a href="http://yoursite.com/2020/05/07/Python%E5%90%84%E7%A7%8D%E7%AC%A6%E5%8F%B7/">http://yoursite.com/2020/05/07/Python%E5%90%84%E7%A7%8D%E7%AC%A6%E5%8F%B7/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -562,8 +535,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/Pyhton/">
+                                    <span class="chip bg-color">Pyhton</span>
                                 </a>
                             
                         </div>
@@ -731,9 +704,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/05/07/Python%E5%90%84%E7%A7%8D%E7%AC%A6%E5%8F%B7/">
                     <div class="card-image">
@@ -751,9 +725,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -766,6 +740,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -784,33 +759,49 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/06/hello-world/">
+                <a href="/2020/05/07/Python%E5%88%97%E8%A1%A8%E5%92%8C%E5%BE%AA%E7%8E%AF/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Python列表和循环">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Python列表和循环</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for mor
+
+
+
+
+#列表在开始使用for循环之前，你需要在某个位置存放循环的结果。最好的办法就是使用列表(list)，顾名思义，它就是一个从头到尾按照顺序存放东西的容器。##如何创建列表hair = [‘brown’,’blond’,’red’]e
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            coderwhm
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
                 </div>
                 
             </div>
