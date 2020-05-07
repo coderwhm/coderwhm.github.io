@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python学习笔记1变量和命名., coder王鹤鸣">
+    <meta name="keywords" content="Python读写文件, coder王鹤鸣">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python学习笔记1变量和命名. | coder王鹤鸣</title>
+    <title>Python读写文件 | coder王鹤鸣</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python学习笔记1变量和命名.</h1>
+                    <h1 class="description center-align post-title">Python读写文件</h1>
                 </div>
             </div>
         </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-28
+                    2020-04-29
                 </div>
                 
 
@@ -471,7 +471,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>#<strong>变量和命名</strong><br>变量来源于数学，是计算机语言中能储存计算结果或能表示值抽象概念。变量可以通过变量名访问。在指令式语言中，变量通常是可变的；但在纯函数式语言（如Haskell）中，变量可能是不可变的。在一些语言中，变量可能被明确为是能表示可变状态、具有存储空间的抽象（如在Java和Visual Basic中）；但另外一些语言可能使用其它概念（如C的对象）来指称这种抽象，而不严格地定义“变量”的准确外延。<br>如：<br>a = 10<br>b = 5<br>变量名只能包含字母、数字和下划线。变量名可以是字母或下划线打头，但不能以数字打头；<br>变量名不能包含空格，但可以使用下划线来分割其中的单词。例如：greeting_message；<br>不要将Python关键字和函数名用作变量名，即不要使用Python保留用于特殊用途的单词，如print；<br>变量名应简短又具有描述性；<br>慎用小写字母l和大写字母O，容易和1和0混淆。</p>
+                <h2 id="读写文件"><a href="#读写文件" class="headerlink" title="#读写文件"></a>#<strong>读写文件</strong></h2><p>close:关闭文件。跟编译器中的文件保存是一个意思。<br>read:读取文件的内容。你可以给结果赋给一个变量。<br>readline:只读取文本文件的一行。<br>truncate:清空文件，请小心使用该命令。<br>write(‘stuff’):将stuff写入文件。<br>seek:将读写位置一致文章开头。</p>
+<hr>
+<p>f = open(“test.text”,”w”)               #打开文件，”w“为写入操作，找不到就新建，”r“是只读模式，找不到会报错<br>f.close()                               #关闭文件</p>
+<hr>
+<p>读取指定<br>‘’’<br>f = open(“test.txt”,”w”)<br>f.write(“Life is short,you need python”)<br>f.close()<br>f = open(“test.txt”,”r”)</p>
+<p>contend = f.read(5)<br>print(contend)<br>contend = f.read(10)<br>print(contend)<br>‘’’</p>
+<hr>
+<p>按行数读取<br>‘’’<br>f = open(“test.txt”,”w”)<br>f.write(“Life is short,you need python”)<br>f = open(“test.txt”,”r”)<br>contend = f.readlines()                    #一次性读取全部文件为列表，每行一个字符串元素<br>#print(contend)<br>i = 1<br>for temp in contend:<br>    print(“%d:%s”%(i,temp))<br>    i += 1</p>
+<p>f.close()<br>‘’’<br>‘’’<br>f = open(“test.txt”,”w”)<br>f.write(“Life is short,you need python”)<br>f = open(“test.txt”,”r”)<br>contend = f.readline()<br>print(contend)<br>‘’’</p>
 
             </div>
             <hr/>
@@ -497,7 +505,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/04/28/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/">http://yoursite.com/2020/04/28/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/</a>
+                    <a href="http://yoursite.com/2020/04/29/Python%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/">http://yoursite.com/2020/04/29/Python%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -708,25 +716,67 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/28/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%96%87%E6%9C%AC/">
+                <a href="/2020/05/06/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Python学习笔记2字符串和文本.">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Python学习笔记2字符串和文本.</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            #字符串和文本##字符串字符串通常是指你要展示给别人看的或者想要从程序里“导出”的一小段字符。Python可以通过双引号（“”）或者单引号（‘’）识别出字符串来如果你把单引号或双引号括起来的文本放到print后面它会被Python打印出来字
+                            
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for mor
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-06
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            coderwhm
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/04/29/Python%E6%8F%90%E7%A4%BA%E5%92%8C%E4%BC%A0%E9%80%92/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Python提示和传递.">
+                        
+                        <span class="card-title">Python提示和传递.</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            #提示和传递我们使用argv和input一起来向用户提一些问题。
+
+from sys import argv
+script,user_name = argvprompt = ‘&gt;’
+print(f”Hi{user_name},I am
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -744,60 +794,6 @@
                     
                     <a href="/tags/Python/">
                         <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/04/27/%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="我的个人博客.">
-                        
-                        <span class="card-title">我的个人博客.</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-##内容
-首先得十分感谢羊哥(CodeSheep)的 手把手教你从0开始搭建自己的个人博客:
- https://www.bilibili.com/video/av44544186 让我有了创建博客的想法
-搭建
-搭建这一步我其实没踩什么坑,
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    个人博客
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">个人博客</span>
                     </a>
                     
                 </div>
